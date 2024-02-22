@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Weather APIs">
+        <div class="slds-var-m-around_medium">
+            <lightning-input onchange={handleOnChange} label="Search City">
+            </lightning-input>
+            <lightning-button label="Get Weather" onclick={buttonClick}>
+            </lightning-button>
+            <br>
+            {message}
+            <br>
+            <img src={imageUrl} alt="">
+            <b>{condition}</b>
+        </div>
+    </lightning-card>
+</template>
